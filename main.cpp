@@ -6,19 +6,14 @@ using namespace std;
 
 int main()
 {
-    cout << "Введите действительное число для последовательности х1...х10: " << endl;
+    cout << "Введите действительное число для последовательности х1,y1,...х10,y10: " << endl;
     const short myArrSize = 10;
     double myArr[myArrSize];
     for (short i = 0; i < myArrSize; i++)
     {
-        cout << 'x' << i+1 << " ";
+        cout << 'x' << i + 1 << " ";
         myArr[i] = getMyArr();
-    }
-
-    cout << "Введите действительное число для последовательности y1...y10: " << endl;
-    for (short i = 0; i < myArrSize; i++)
-    {
-        cout << 'y' << i+1 << " ";
+        cout << 'y' << i + 1 << " ";
         myArr[i] *= getMyArr();
     }
 
